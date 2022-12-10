@@ -4,13 +4,16 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.lugares.data.LugarDatabase
+import com.example.lugares.model.Lugar
+import com.example.lugares.repository.LugarRepository
 /*import com.example.lugares.data.LugarDatabase
 import com.example.lugares.model.Lugar
 import com.example.lugares.repository.LugarRepository*/
 import kotlinx.coroutines.launch
 
 class LugarViewModel(application: Application) : AndroidViewModel(application) {
-    /*val obtenerLugares: LiveData<List<Lugar>>
+    val obtenerLugares: LiveData<List<Lugar>>
     private val repository: LugarRepository
 
     init {
@@ -26,5 +29,5 @@ class LugarViewModel(application: Application) : AndroidViewModel(application) {
     }
     fun eliminarLugar(lugar: Lugar){
         viewModelScope.launch { repository.eliminarLugar(lugar) }
-    }*/
+    }
 }
