@@ -24,9 +24,6 @@ class LugarViewModel(application: Application) : AndroidViewModel(application) {
     fun guardarLugar(lugar: Lugar){
         viewModelScope.launch { repository.guardarLugar(lugar) }
     }
-    fun updateLugar(lugar: Lugar){
-        viewModelScope.launch { repository.updateLugar(lugar) }
-    }
     fun eliminarLugar(lugar: Lugar){
         viewModelScope.launch { repository.eliminarLugar(lugar) }
     }

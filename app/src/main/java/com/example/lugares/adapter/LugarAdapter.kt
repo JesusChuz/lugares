@@ -4,10 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-//import com.example.lugares.databinding.FragmentAddLugarBinding
 import com.example.lugares.databinding.LugarFilaBinding
 import com.example.lugares.model.Lugar
-//import com.example.lugares.ui.lugar.LugarFragmentDirections
+import com.example.lugares.ui.lugar.LugarFragmentDirections
 
 class LugarAdapter: RecyclerView.Adapter<LugarAdapter.LugarViewHolder>(){
     //Lista de Lugares
@@ -24,10 +23,10 @@ class LugarAdapter: RecyclerView.Adapter<LugarAdapter.LugarViewHolder>(){
             itemBinding.tvCorreo.text = lugar.correo
             itemBinding.tvTelefono.text = lugar.telefono
             //Evento enviar Update
-           /* itemBinding.vistaFila.setOnClickListener {
-                val action = LugarFragmentDirections.actionNavLugarToUpdateLugarFragment(lugar)
+            itemBinding.vistaFila.setOnClickListener {
+                val action = LugarFragmentDirections.actionNavHomeToUpdateLugarFragment(lugar)
                 itemView.findNavController().navigate(action)
-            }*/
+            }
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugarViewHolder {
