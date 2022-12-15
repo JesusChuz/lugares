@@ -28,7 +28,12 @@
     <string name="ms_FalloDelete">Fallo al eliminar</string>
     <string name="btUpdateLugar">Actualizar Lugar</string>
     <string name="btDeleteLugar">Eliminar Lugar</string>
+    <string name="msgInicioNotaAudio">MsgInicioNotaAudio</string>
+    <string name="msgDetieneNotaAudio">MsgFinNotaAudio</string>
+    <string name="msgSubiendo">Subiendose</string>
+    <string name="todo">Todo</string>
+    <string name="msg_imagen">Imagen</string>
+    <string name="msgEscucharAudio">msg escuchar audio</string>
 
-    <string name="menu_home">Home</string>
 
 </resources>
